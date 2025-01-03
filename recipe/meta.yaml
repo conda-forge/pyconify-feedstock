@@ -1,5 +1,5 @@
 {% set name = "pyconify" %}
-{% set version = "0.1.6" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyconify-{{ version }}.tar.gz
-  sha256: 25272f7a29965f32ee698c9da6aab8bbbeb0756ca3bfeadd3d9effab689d239d
+  sha256: c15df14f98e97e1b1206d51dc8bc822e0fe5c10478d86e45df193626e63fec1d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
